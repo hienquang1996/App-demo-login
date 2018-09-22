@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".spi">
+
+
+    <TextView
+        android:id="@+id/RAW"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="134dp"
+        android:text="RAW VALUE"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/ADC"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="153dp"
+        android:text="ADC VALUE"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/raw"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/RAW"
+        android:layout_below="@+id/RAW"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/TEMP"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="35dp"
+        android:text="TEMPERATURE"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/TEMP"
+        android:layout_below="@+id/RAW"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/adc"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/ADC"
+        android:layout_below="@+id/RAW"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/ADC"
+        android:layout_centerVertical="true"
+        android:onClick="onClick"
+        android:text="BTN" />
+
+    <Button
+        android:id="@+id/spi"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/RAW"
+        android:layout_centerVertical="true"
+        android:onClick="onClick"
+        android:text="CLOSE SPI" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="onClick"
+        android:text="MENU" />
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/RAW"
+        android:onClick="onClick"
+        android:text="SIGN OUT" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EasyApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="easy_app">I am a Simple App!</string>
+    <string name="next_page">Next Page</string>
+    <string name="second_page_message">I am the Second Page!</string>
+    <string name="title_activity_second">SecondActivity</string>
+</resources>
